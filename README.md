@@ -14,7 +14,7 @@ php artisan serve
 ```
 
 
-## Coding  
+### Coding  
 
 - SOLID Pattern
 - Repositories  (app\Repositories)
@@ -24,4 +24,6 @@ php artisan serve
 - Migration  (database\migrations, database\factories, database\seeders)
 - Unit test  (tests\Unit\app, tests\Unit\app\Services)
 
-## Approach
+## Author
+
+- [@sakandertamoor](https://www.github.com/sakandertamoor)
