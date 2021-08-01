@@ -11,15 +11,17 @@ class KnightNotification extends Notification
 {
     use Queueable;
     private $knightData;
+    private $userData;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($knightData)
+    public function __construct($knightData, $userData)
     {
         $this->knightData = $knightData;
+        $this->userData = $userData;
     }
 
     /**
@@ -51,7 +53,7 @@ class KnightNotification extends Notification
     {
             return [
                 'subject' => 'Knight letter to Princess',
-                'sent_to' => 'sikander.tamoor@gmail.com',
+                'sent_to' => $this->userData['email'],
                 'sent_by' => 'sikander@admin.com',
                 'notification_type' => 'letter',
                 'data' => $this->knightData
