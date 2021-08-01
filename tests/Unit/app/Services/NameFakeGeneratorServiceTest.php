@@ -54,7 +54,7 @@ class NameFakeGeneratorServiceTest extends TestCase
         return [
             'getNameWillReturnAValidName' => [
                 'statusCode' => 200,
-                'body' => json_encode(['name' => 'Sakandar Taimoor']),
+                'body' => json_encode(['name' => 'Sakander Tamoor']),
                 'expectedName' => 'Sakandar Taimoor'
             ],
             'getNameWillReturnNullForBadRequest' => [

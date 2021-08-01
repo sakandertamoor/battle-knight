@@ -28,7 +28,7 @@ class KnightGeneratorServiceTest extends TestCase
 
     public function testGenerateWillReturnAKnight()
     {
-        $this->initiateKnightGenerator('Sikandar');
+        $this->initiateKnightGenerator('Sakander');
         $this->assertInstanceOf(Knight::class, $this->knightGeneratorService->generate());
     }
 

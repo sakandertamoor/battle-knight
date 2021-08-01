@@ -26,7 +26,7 @@ class KnightRepositoryTest extends TestCase
     public function testGetReturnsAKnight()
     {
         KnightModel::factory(1)->create([
-            'name' => 'SSSSSsakandar',
+            'name' => 'Sakander',
             'age' => 25,
             'health' => 100,
             'courage' => 90,
@@ -41,12 +41,8 @@ class KnightRepositoryTest extends TestCase
 
         $knight = $this->knightRepository->get(1);
         $knights = KnightModel::find(1);
-        echo '<pre>';
-        print_r($knights->skills->);
-        echo '</pre>';
-        exit;
         $this->assertInstanceOf(Knight::class, $knight);
-        $this->assertEquals('Sakandar', $knight->getName());
+        $this->assertEquals('Sakander', $knight->getName());
         $this->assertEquals(25, $knight->getAge());
     }
 
