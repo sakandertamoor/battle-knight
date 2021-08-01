@@ -14,3 +14,7 @@ Composer install
 - Services Providers  (app\Services)
 - Eloquent  (app\Models, app\Casts)
 - Unit test  (tests\Unit\app, tests\Unit\app\Services)
+- Migration  (database\migrations, database\factories, database\seeders)
+- Unit test  (tests\Unit\app, tests\Unit\app\Services)
+
+## Approach
